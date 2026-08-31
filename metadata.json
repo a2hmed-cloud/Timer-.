@@ -1,0 +1,6 @@
+{
+  "name": "StudyFlow",
+  "description": "Personal student study companion with personalized onboarding, educational catalog (Egypt, Saudi Arabia, International), daily planning, smart task prioritization, Pomodoro focus timer, daily schedule, recurring reminders, and weekly reviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

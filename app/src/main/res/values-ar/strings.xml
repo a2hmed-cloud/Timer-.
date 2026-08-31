@@ -1,0 +1,275 @@
+<resources>
+    <string name="app_name">StudyFlow</string>
+
+    <!-- Navigation -->
+    <string name="nav_today">اليوم</string>
+    <string name="nav_tasks">المهام</string>
+    <string name="nav_schedule">الجدول</string>
+    <string name="nav_news">الأخبار</string>
+    <string name="nav_reminders">التذكيرات</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="nav_weekly_review">المراجعة الأسبوعية</string>
+    <string name="nav_subjects">المواد</string>
+    <string name="nav_focus">فوكس</string>
+    <string name="nav_more">المزيد</string>
+
+    <!-- Generic actions -->
+    <string name="back">رجوع</string>
+    <string name="next">التالي</string>
+    <string name="add">إضافة</string>
+    <string name="get_started">ابدأ الآن</string>
+    <string name="action_add_task">إضافة مهمة</string>
+    <string name="action_start">بدء</string>
+    <string name="action_ready">جاهز</string>
+    <string name="action_pause">إيقاف مؤقت</string>
+    <string name="action_resume">استئناف</string>
+    <string name="action_finish">إنهاء الجلسة</string>
+    <string name="action_edit">تعديل</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_complete">إكمال</string>
+    <string name="action_complete_and_finish">إكمال المهمة والإنهاء</string>
+    <string name="action_save">حفظ</string>
+    <string name="action_cancel">إلغاء</string>
+    <string name="action_try_again">إعادة المحاولة</string>
+    <string name="clear">مسح</string>
+    <string name="not_now">ليس الآن</string>
+
+    <!-- Today Screen -->
+    <string name="greeting_morning">صباح الخير</string>
+    <string name="greeting_afternoon">مساء الخير</string>
+    <string name="greeting_evening">مساء الخير</string>
+    <string name="today_progress">إنجاز اليوم</string>
+    <string name="completed_tasks_count">تم إنجاز %1$d من أصل %2$d</string>
+    <string name="remaining_tasks_count">متبقي %1$d مهام</string>
+    <string name="next_task_header">المهمة التالية المقترحة</string>
+    <string name="today_tasks_header">مهام اليوم</string>
+    <string name="no_tasks_today_title">لا توجد مهام لليوم</string>
+    <string name="no_tasks_today_desc">أضف مهمتك الأولى لبدء تنظيم يومك الدراسي.</string>
+    <string name="today_study_time_label">وقت المذاكرة: %1$s</string>
+
+    <!-- Tasks Screen -->
+    <string name="tasks_title">المهام الدراسية</string>
+    <string name="filter_all">الكل</string>
+    <string name="filter_active">النشطة</string>
+    <string name="filter_completed">المكتملة</string>
+    <string name="filter_high_priority">أولوية قصوى</string>
+    <string name="filter_today">اليوم</string>
+    <string name="filter_upcoming">القادمة</string>
+    <string name="no_tasks_title">لا توجد مهام بعد</string>
+    <string name="no_tasks_desc">أنشئ مهمتك الأولى لتنظيم مذاكرتك وواجباتك.</string>
+    <string name="no_filtered_tasks">لا توجد مهام تطابق هذا الفلتر.</string>
+
+    <!-- Add/Edit Task Screen -->
+    <string name="add_task_title">إضافة مهمة جديدة</string>
+    <string name="edit_task_title">تعديل المهمة</string>
+    <string name="task_title_label">عنوان المهمة *</string>
+    <string name="task_title_hint">مثال: حل واجب الرياضيات، مراجعة الفصل الثالث</string>
+    <string name="task_desc_label">الوصف والملاحظات</string>
+    <string name="task_desc_hint">أضف تفاصيل أو روابط أو صفحات...</string>
+    <string name="task_subject_label">المادة الدراسية</string>
+    <string name="select_subject">اختر المادة</string>
+    <string name="no_subject">بدون مادة</string>
+    <string name="task_priority_label">الأولوية</string>
+    <string name="priority_low">منخفضة</string>
+    <string name="priority_medium">متوسطة</string>
+    <string name="priority_high">عالية</string>
+    <string name="status_todo">قيد الانتظار</string>
+    <string name="status_in_progress">قيد التنفيذ</string>
+    <string name="status_completed">مكتملة</string>
+    <string name="task_estimated_label">الوقت التقديري (بالدقائق)</string>
+    <string name="task_estimated_hint">مثال: 45</string>
+    <string name="task_due_date_label">الموعد النهائي للتسليم</string>
+    <string name="task_scheduled_label">الوقت المجدول للمذاكرة</string>
+    <string name="select_date_time">اختر التاريخ والوقت</string>
+    <string name="task_reminder_label">تذكير المهمة</string>
+    <string name="reminder_none">بدون تذكير</string>
+    <string name="reminder_5min">قبل 5 دقائق</string>
+    <string name="reminder_15min">قبل 15 دقيقة</string>
+    <string name="reminder_30min">قبل 30 دقيقة</string>
+    <string name="reminder_1hour">قبل ساعة واحدة</string>
+
+    <!-- Task Details Screen -->
+    <string name="task_details_title">تفاصيل المهمة</string>
+    <string name="delete_task_confirm_title">حذف المهمة؟</string>
+    <string name="delete_task_confirm_message">هل أنت متأكد من رغبتك في حذف هذه المهمة نهائيًا؟</string>
+    <string name="due_date">الموعد النهائي: %1$s</string>
+    <string name="scheduled_for">مجدولة في: %1$s</string>
+    <string name="estimated_minutes">%1$d دقيقة</string>
+    <string name="created_at">تاريخ الإنشاء: %1$s</string>
+    <string name="completed_at">تاريخ الإكمال: %1$s</string>
+
+    <!-- Schedule Screen -->
+    <string name="schedule_title">الجدول اليومي</string>
+    <string name="no_scheduled_tasks_title">لا توجد مهام مجدولة</string>
+    <string name="no_scheduled_tasks_desc">حدد وقتًا مجدولًا لمهامك لتظهر في خطك الزمني الدراسي.</string>
+
+    <!-- Focus Screen -->
+    <string name="focus_title">فوكس</string>
+    <string name="focus_timer_title">فوكس</string>
+    <string name="pomodoro_focus">تركيز</string>
+    <string name="pomodoro_short_break">استراحة قصيرة</string>
+    <string name="pomodoro_long_break">استراحة طويلة</string>
+    <string name="general_study_session">جلسة مذاكرة عامة</string>
+    <string name="focus_target_task">المهمة المستهدفة</string>
+    <string name="pomodoro_sessions_done">أنجزت %1$d جلسات</string>
+    <string name="next_session">الجلسة التالية</string>
+    <string name="focus_session_done">عمل رائع! انتهت جلسة التركيز بنجاح.</string>
+    <string name="session_duration">مدة الجلسة: %1$d دقيقة</string>
+
+    <!-- Subjects Screen -->
+    <string name="subjects_title">المواد الدراسية</string>
+    <string name="add_subject">إضافة مادة</string>
+    <string name="add_subject_title">إضافة مادة جديدة</string>
+    <string name="edit_subject">تعديل المادة</string>
+    <string name="edit_subject_title">تعديل المادة</string>
+    <string name="subject_name_label">اسم المادة *</string>
+    <string name="subject_name">اسم المادة</string>
+    <string name="subject_color">لون المادة</string>
+    <string name="subject_name_hint">مثال: علوم الحاسب، لغة عربية</string>
+    <string name="subject_name_error">اسم المادة مطلوب</string>
+    <string name="subject_color_label">اختر اللون المميز</string>
+    <string name="no_subjects_title">لا توجد مواد مسجلة</string>
+    <string name="no_subjects_desc">أضف موادك الدراسية لتنظيم المهام ومتابعة أداء كل مادة.</string>
+    <string name="action_add_subject">إضافة مادة</string>
+    <string name="delete_subject_title">حذف المادة؟</string>
+    <string name="delete_subject_message">المهام المرتبطة بهذه المادة ستظل موجودة بدون مادة.</string>
+    <string name="delete_subject_confirm_title">حذف المادة؟</string>
+    <string name="delete_subject_confirm_message">المهام المرتبطة بهذه المادة ستظل موجودة بدون مادة.</string>
+
+    <!-- Reminders Screen -->
+    <string name="reminders_title">التذكيرات الدورية</string>
+    <string name="add_reminder">تذكير جديد</string>
+    <string name="add_reminder_title">إضافة تذكير دوري</string>
+    <string name="edit_reminder">تعديل التذكير</string>
+    <string name="edit_reminder_title">تعديل التذكير الدوري</string>
+    <string name="reminder_title_label">عنوان التذكير *</string>
+    <string name="reminder_title_hint">مثال: مراجعة الكلمات، التخطيط اليومي</string>
+    <string name="reminder_message_label">نص التذكير</string>
+    <string name="reminder_message_hint">مثال: راجع ملخص الدرس لمدة 15 دقيقة</string>
+    <string name="reminder_time_label">وقت التنبيه</string>
+    <string name="reminder_repeat_type_label">نوع التكرار</string>
+    <string name="days_of_week_label">أيام التكرار</string>
+    <string name="repeat_type_label">التكرار</string>
+    <string name="repeat_once">مرة واحدة</string>
+    <string name="repeat_daily">يوميًا</string>
+    <string name="repeat_weekly">أسبوعيًا</string>
+    <string name="repeat_monthly">شهريًا</string>
+    <string name="repeat_custom">مخصص</string>
+    <string name="time_label">الوقت</string>
+    <string name="days_label">الأيام</string>
+    <string name="day_mon">الإثنين</string>
+    <string name="day_tue">الثلاثاء</string>
+    <string name="day_wed">الأربعاء</string>
+    <string name="day_thu">الخميس</string>
+    <string name="day_fri">الجمعة</string>
+    <string name="day_sat">السبت</string>
+    <string name="day_sun">الأحد</string>
+    <string name="no_reminders_title">لا توجد تذكيرات دورية</string>
+    <string name="no_reminders_desc">أنشئ تنبيهات مجدولة للالتزام بروتينك الدراسي ومراجعاتك اليومية.</string>
+    <string name="action_add_reminder">إضافة تذكير</string>
+    <string name="delete_reminder_title">حذف التذكير؟</string>
+    <string name="delete_reminder_message">هل أنت متأكد من حذف هذا التذكير الدوري؟</string>
+    <string name="delete_reminder_confirm_title">حذف التذكير؟</string>
+    <string name="delete_reminder_confirm_message">هل أنت متأكد من حذف هذا التذكير الدوري؟</string>
+
+    <!-- News Screen -->
+    <string name="news_title">أخبار ونصائح دراسية</string>
+    <string name="no_news_title">لا توجد أخبار حاليًا</string>
+    <string name="no_news_desc">ستظهر هنا النصائح الدراسية والإعلانات التعليمية المحدثة.</string>
+
+    <!-- Weekly Review Screen -->
+    <string name="weekly_review_title">المراجعة الأسبوعية</string>
+    <string name="weekly_stats_subtitle">ملخص أدائك وإنتاجيتك الدراسية خلال آخر 7 أيام.</string>
+    <string name="stat_completed_tasks">المهام المنجزة</string>
+    <string name="stat_study_time">إجمالي وقت المذاكرة</string>
+    <string name="stat_total_study_time">إجمالي وقت المذاكرة</string>
+    <string name="stat_tasks_created">المهام المنشأة</string>
+    <string name="stat_completion_rate">نسبة الإنجاز</string>
+    <string name="not_enough_data_title">بيانات غير كافية بعد</string>
+    <string name="not_enough_data_desc">أكمل مهامك وسجل جلسات تركيز هذا الأسبوع لعرض الإحصائيات.</string>
+    <string name="no_review_data_title">بيانات غير كافية بعد</string>
+    <string name="no_review_data_desc">أكمل مهامك وسجل جلسات تركيز هذا الأسبوع لعرض الإحصائيات.</string>
+
+    <!-- Settings Screen & Profile -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="student_profile_title">ملف الطالب</string>
+    <string name="default_student_name">طالب</string>
+    <string name="edit_name">تعديل الاسم</string>
+    <string name="settings_theme_section">المظهر والثيم</string>
+    <string name="settings_language_section">اللغة</string>
+    <string name="settings_notifications_section">التنبيهات والإشعارات</string>
+    <string name="focus_timer_settings_title">إعدادات فوكس</string>
+    <string name="section_appearance">المظهر</string>
+    <string name="theme_label">الوضع</string>
+    <string name="theme_mode">وضع المظهر</string>
+    <string name="theme_system">تلقائي للنظام</string>
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">داكن</string>
+    <string name="color_accent">اللون المميز</string>
+    <string name="accent_dynamic">ديناميكي</string>
+    <string name="accent_blue">أزرق</string>
+    <string name="accent_green">أخضر</string>
+    <string name="accent_purple">بنفسجي</string>
+    <string name="accent_amber">كهرماني</string>
+    <string name="accent_rose">وردي</string>
+    <string name="language_label">لغة التطبيق</string>
+    <string name="language_system">لغة النظام</string>
+    <string name="language_english">English (الإنجليزية)</string>
+    <string name="language_arabic">العربية</string>
+    <string name="lang_system">لغة النظام</string>
+    <string name="lang_english">English (الإنجليزية)</string>
+    <string name="lang_arabic">العربية</string>
+    <string name="section_notifications">الإشعارات</string>
+    <string name="enable_notifications">تفعيل الإشعارات</string>
+    <string name="enable_task_reminders">تنبيهات المهام</string>
+    <string name="enable_recurring_reminders">التذكيرات الدورية</string>
+    <string name="default_reminder_offset">التنبيه التلقائي قبل المهمة</string>
+    <string name="default_task_reminder">التنبيه التلقائي قبل المهمة</string>
+    <string name="section_data">إدارة البيانات</string>
+    <string name="manage_subjects">إدارة المواد</string>
+    <string name="about_title">حول StudyFlow</string>
+    <string name="about_description">مساعد إنتاجية ومخطط دراسي ذكي للطلاب مبني بأحدث معمارية Android Native.</string>
+    <string name="about_version">الإصدار %1$s</string>
+
+    <!-- Onboarding Flow -->
+    <string name="onboarding_welcome_tagline">مساعدك الدراسي الذكي الذي يعرفك وينظم يومك</string>
+    <string name="onboarding_welcome_subtext">رتب موادك، خطط لمهامك، ركز مع جلسات بومودورو، ولا تفوت أي موعد تسليم دراسي.</string>
+    <string name="onboarding_name_title">ما هو اسمك؟</string>
+    <string name="onboarding_name_subtitle">سنستخدمه لتخصيص خطتك اليومية ورسائل تذكيرك.</string>
+    <string name="your_name">اسمك</string>
+    <string name="enter_your_name">مثال: أحمد، سارة...</string>
+    <string name="onboarding_country_title">اختر دولتك أو نظامك التعليمي</string>
+    <string name="onboarding_country_subtitle">نستخدم هذا لتجهيز المناهج والمواد الدراسية المناسبة لك تلقائيًا.</string>
+    <string name="onboarding_grade_title">اختر نظامك الدراسي وسنتك الدراسية</string>
+    <string name="onboarding_grade_subtitle">اختر سنتك الحالية لتجهيز قائمة المواد المناسبة.</string>
+    <string name="education_system">النظام التعليمي</string>
+    <string name="grade_level">السنة / الصف الدراسي</string>
+    <string name="onboarding_subjects_auto_title">جهزنا المواد المناسبة لسنتك 🎉</string>
+    <string name="onboarding_subjects_auto_subtitle">تم تحديد المواد الأساسية لمرحلة %1$s. يمكنك تعديلها الآن أو لاحقًا.</string>
+    <string name="onboarding_subjects_empty_title">نظام دراسي أو جامعي مخصص</string>
+    <string name="onboarding_subjects_empty_desc">يمكنك الآن إضافة مقرراتك الجامعية أو موادك الدراسية بسهولة.</string>
+    <string name="onboarding_customize_subjects_title">تخصيص المواد الدراسية</string>
+    <string name="onboarding_customize_subjects_subtitle">اختر أو أضف المواد التي تدرسها هذا الفصل.</string>
+    <string name="onboarding_theme_title">اختر المظهر واللون المفضل</string>
+    <string name="onboarding_theme_subtitle">خصص تطبيقك بالوضع والألوان التي تناسب أسلوبك.</string>
+    <string name="onboarding_notifications_title">التنبيهات والتذكيرات الدراسية</string>
+    <string name="onboarding_notifications_desc">استلم تنبيهات دقيقة لمهامك القادمة، وجلسات التركيز، وتذكيرات روتينك اليومي.</string>
+    <string name="onboarding_pomodoro_title">مؤقت بومودورو للتركيز</string>
+    <string name="onboarding_pomodoro_subtitle">حدد الفترات الزمنية المناسبة لك للتركيز والاستراحة.</string>
+    <string name="focus_duration">مدة التركيز</string>
+    <string name="short_break_duration">استراحة قصيرة</string>
+    <string name="long_break_duration">استراحة طويلة</string>
+    <string name="minutes_short">د</string>
+    <string name="onboarding_ready_title">أنت جاهز تمامًا! 🚀</string>
+    <string name="onboarding_ready_desc">تم ضبط StudyFlow وهو مستعد الآن لتنظيم دراستك ويومك بالكامل.</string>
+    <string name="add_first_task">إضافة أول مهمة في يومك</string>
+    <string name="start_later">سأبدأ لاحقًا</string>
+
+    <!-- Errors & Validation -->
+    <string name="error_title_required">عنوان المهمة مطلوب</string>
+    <string name="error_invalid_estimated">الوقت التقديري يجب أن يكون أكبر من صفر</string>
+    <string name="error_generic">حدث خطأ ما.</string>
+    <string name="notification_permission_title">تفعيل الإشعارات</string>
+    <string name="notification_permission_desc">يحتاج StudyFlow إلى إذن الإشعارات لتذكيرك بمهامك ومواعيد مذاكرتك في الوقت المحدد.</string>
+    <string name="grant_permission">السماح بالإشعارات</string>
+</resources>
