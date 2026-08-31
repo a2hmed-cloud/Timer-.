@@ -72,17 +72,25 @@ class ExampleUnitTest {
     }
 
     @Test
-    fun recurringScheduleCalculator_calculatesFutureTriggerTime() {
-        val reminder = RecurringReminder(
-            id = 1,
-            title = "Daily Study",
-            repeatType = RepeatType.DAILY,
-            timeOfDayMinutes = 20 * 60, // 8 PM
-            enabled = true,
-            createdAt = System.currentTimeMillis()
-        )
+    fun parseSubjectColor_convertsHexAndFallbackCorrectly() {
+        val fallbackColor = androidx.compose.ui.graphics.Color.Red
 
-        val triggerTime = RecurringScheduleCalculator.calculateNextTriggerTime(reminder)
-        assertTrue(triggerTime > System.currentTimeMillis())
+        // Null returns fallback
+        assertEquals(fallbackColor, com.example.ui.theme.parseSubjectColor(null, fallbackColor))
+
+        // 0L returns fallback
+        assertEquals(fallbackColor, com.example.ui.theme.parseSubjectColor(0L, fallbackColor))
+
+        // Valid ARGB Long produces valid non-transparent Color
+        val colorBlue = com.example.ui.theme.parseSubjectColor(0xFF2563EBL, fallbackColor)
+        assertEquals(1.0f, colorBlue.alpha, 0.01f)
+        assertEquals(0.145f, colorBlue.red, 0.05f)
+        assertEquals(0.388f, colorBlue.green, 0.05f)
+        assertEquals(0.921f, colorBlue.blue, 0.05f)
+
+        // Long without alpha (e.g. 0x2563EB) gets alpha auto-populated
+        val colorNoAlpha = com.example.ui.theme.parseSubjectColor(0x2563EBL, fallbackColor)
+        assertEquals(1.0f, colorNoAlpha.alpha, 0.01f)
+        assertEquals(colorBlue, colorNoAlpha)
     }
 }

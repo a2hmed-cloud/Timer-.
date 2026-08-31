@@ -59,6 +59,7 @@ import com.example.R
 import com.example.data.entity.Subject
 import com.example.ui.components.EmptyStateView
 import com.example.ui.theme.SubjectPalette
+import com.example.ui.theme.parseSubjectColor
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -187,7 +188,7 @@ fun SubjectRowItem(
     onEdit: () -> Unit,
     onDelete: () -> Unit
 ) {
-    val color = subject.color?.let { Color(it.toULong()) } ?: MaterialTheme.colorScheme.primary
+    val color = parseSubjectColor(subject.color, MaterialTheme.colorScheme.primary)
 
     Card(
         shape = RoundedCornerShape(12.dp),
@@ -285,7 +286,7 @@ fun SubjectDialog(
 
                 LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     items(SubjectPalette) { colorVal ->
-                        val color = Color(colorVal)
+                        val color = parseSubjectColor(colorVal)
                         val isSelected = selectedColor == colorVal
 
                         Box(

@@ -95,6 +95,7 @@ import com.example.domain.model.CatalogSubject
 import com.example.domain.model.EducationCountry
 import com.example.domain.model.EducationGrade
 import com.example.domain.model.EducationSystem
+import com.example.ui.theme.parseSubjectColor
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -689,7 +690,7 @@ fun Step5CatalogPreview(
                 items(catalogSubjects) { sub ->
                     SubjectRowItem(
                         title = sub.nameAr,
-                        color = Color(sub.colorHex),
+                        color = parseSubjectColor(sub.colorHex),
                         isSelected = true,
                         onToggle = { onToggle(sub) }
                     )
@@ -810,7 +811,7 @@ fun Step6CustomizeSubjects(
             items(catalogSubjects) { catSub ->
                 SubjectRowItem(
                     title = catSub.nameAr,
-                    color = Color(catSub.colorHex),
+                    color = parseSubjectColor(catSub.colorHex),
                     isSelected = true,
                     onToggle = { onToggleCatalog(catSub) }
                 )
@@ -832,7 +833,7 @@ fun Step6CustomizeSubjects(
                             modifier = Modifier
                                 .size(24.dp)
                                 .clip(CircleShape)
-                                .background(customSub.color?.let { Color(it) } ?: MaterialTheme.colorScheme.primary)
+                                .background(parseSubjectColor(customSub.color, MaterialTheme.colorScheme.primary))
                         )
                         Spacer(modifier = Modifier.width(12.dp))
                         Text(
@@ -1451,7 +1452,7 @@ fun AddSubjectDialog(
                             modifier = Modifier
                                 .size(36.dp)
                                 .clip(CircleShape)
-                                .background(Color(colorHex))
+                                .background(parseSubjectColor(colorHex))
                                 .border(
                                     width = if (isSelected) 3.dp else 0.dp,
                                     color = if (isSelected) MaterialTheme.colorScheme.onSurface else Color.Transparent,

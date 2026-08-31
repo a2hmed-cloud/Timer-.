@@ -29,6 +29,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import com.example.ui.theme.parseSubjectColor
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
@@ -135,7 +136,7 @@ fun PriorityBadge(priority: Priority) {
 
 @Composable
 fun SubjectPill(name: String, colorValue: Long?) {
-    val color = colorValue?.let { Color(it.toULong()) } ?: MaterialTheme.colorScheme.primary
+    val color = parseSubjectColor(colorValue, MaterialTheme.colorScheme.primary)
 
     Row(
         verticalAlignment = Alignment.CenterVertically,

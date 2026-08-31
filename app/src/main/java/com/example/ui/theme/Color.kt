@@ -79,3 +79,17 @@ val SubjectPalette = listOf(
     0xFF06B6D4, // Cyan
     0xFF475569  // Slate
 )
+
+fun parseSubjectColor(colorValue: Long?, fallback: Color = Color(0xFF2563EB.toInt())): Color {
+    if (colorValue == null || colorValue == 0L) return fallback
+    return try {
+        val argb = if ((colorValue and 0xFF000000L) == 0L) {
+            colorValue or 0xFF000000L
+        } else {
+            colorValue
+        }
+        Color(argb.toInt())
+    } catch (e: Throwable) {
+        fallback
+    }
+}
