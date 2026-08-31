@@ -49,7 +49,7 @@ class ExampleUnitTest {
         )
 
         val list = listOf(lowPriorityTask, completedTask, highPriorityTask)
-        val sorted = TaskPriorityCalculator.sortTasks(list)
+        val sorted = TaskPriorityCalculator.sortTasks(list, now)
 
         // The highest priority and soonest due active task should be first
         assertEquals(highPriorityTask.id, sorted[0].id)
@@ -57,7 +57,7 @@ class ExampleUnitTest {
         // Completed task should be at the bottom
         assertEquals(completedTask.id, sorted[2].id)
 
-        val nextTask = TaskPriorityCalculator.getNextTask(list)
+        val nextTask = TaskPriorityCalculator.getNextTask(list, now)
         assertNotNull(nextTask)
         assertEquals(highPriorityTask.id, nextTask?.id)
     }
